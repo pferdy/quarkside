@@ -2,13 +2,19 @@
 layout: default
 ---
 <section class="list">
-  {% assign newposts = site.posts | where_exp: "p", "p.date.year >= 2026" %}
-  {% if newposts.size == 0 %}
+  {% assign n = 0 %}
+  {% for post in site.posts %}
+    {% assign yy = post.date | date: "%Y" %}
+    {% if yy >= "2026" %}{% assign n = n | plus: 1 %}{% endif %}
+  {% endfor %}
+  {% if n == 0 %}
   <div class="resultcount">No new posts yet. The 245 posts from 2010 to 2015 live in the <a href="{{ '/archive/' | relative_url }}">archive</a>. New writing will appear here first.</div>
   {% endif %}
-  {% for post in newposts %}
+  {% for post in site.posts %}
+    {% assign yy = post.date | date: "%Y" %}
+    {% if yy >= "2026" %}
   <article class="post">
-    <div class="num">{% assign n = forloop.index %}{% if n < 10 %}0{% endif %}{{ n }}</div>
+    <div class="num">{% if n < 10 %}0{% endif %}{{ n }}</div>
     <div>
       <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
       <div class="meta">{{ post.date | date: "%-d %B %Y" }}{% if post.categories %} &middot; {{ post.categories | join: ', ' }}{% endif %}</div>
@@ -21,5 +27,6 @@ layout: default
       <a class="more" href="{{ post.url | relative_url }}">Read post &rarr;</a>
     </div>
   </article>
+    {% endif %}
   {% endfor %}
 </section>

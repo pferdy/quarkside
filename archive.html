@@ -3,18 +3,25 @@ title: "Archive"
 permalink: /archive/
 layout: default
 ---
-{% assign legacy = site.posts | where_exp: "p", "p.date.year < 2026" %}
-<div class="resultcount">{{ legacy.size }} posts, 2010 to 2015 &middot; <a href="{{ '/' | relative_url }}">New posts are on the home page</a></div>
-<section class="archive">
-{% assign y = 0 %}
-{% for p in legacy %}
-{% unless p.date.year == y %}
-{% if y != 0 %}</div>{% endif %}
-<h3 class="year">{{ p.date.year }}</h3>
-<div class="yearposts">
-{% assign y = p.date.year %}
-{% endunless %}
-<div class="archrow"><a class="archlink" href="{{ p.url | relative_url }}">{{ p.title }}</a><span class="archdate">{{ p.date | date: "%-d %b" }}</span></div>
+{% assign count = 0 %}
+{% assign y = "" %}
+{% for p in site.posts %}
+  {% assign yy = p.date | date: "%Y" %}
+  {% if yy < "2026" %}{% assign count = count | plus: 1 %}{% endif %}
 {% endfor %}
-</div>
+<div class="resultcount">{{ count }} posts, 2010 to 2015 &middot; <a href="{{ '/' | relative_url }}">New posts are on the home page</a></div>
+<section class="archive">
+{% for p in site.posts %}
+  {% assign yy = p.date | date: "%Y" %}
+  {% if yy < "2026" %}
+  {% unless yy == y %}
+    {% if y != "" %}</div>{% endif %}
+  <h3 class="year">{{ yy }}</h3>
+  <div class="yearposts">
+    {% assign y = yy %}
+  {% endunless %}
+  <div class="archrow"><a class="archlink" href="{{ p.url | relative_url }}">{{ p.title }}</a><span class="archdate">{{ p.date | date: "%-d %b" }}</span></div>
+  {% endif %}
+{% endfor %}
+{% if y != "" %}</div>{% endif %}
 </section>
