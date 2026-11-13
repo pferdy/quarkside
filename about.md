@@ -30,4 +30,4 @@ Let's see if we can influence thinking that achieves people working together.
 
 <strong>Interoperability Matters</strong>
 
-A 'quark' is also sound made by a duck.  It is noisy, intrusive and could be a statement or a question.  Hence the many references to quarks in Quarkside.
+A 'quark' is also sound made by a duck.  It is noisy, intrusive and could be attack or defence.  Hence the many references to quarks in Quarkside.
