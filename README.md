@@ -1,6 +1,6 @@
 # quarkside
 
-Quarks are elementary particles. Ideas for composing social benefits. QUARKSIDEas
+Quarks combine to make matter; ideas combine to make systems.
 
 Static blog built with Jekyll, hosted free on GitHub Pages.
 
