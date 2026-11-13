@@ -1,0 +1,37 @@
+---
+title: "IG People: Huge gap in skills"
+date: 2011-02-14 10:11:27
+categories: [Assets, Governance, People, Politics, Privacy, Process, Risk, Security]
+tags: [7DIG, Audit Commission, PAOGA]
+layout: post
+---
+
+<p style="padding-left:30px;"><em><strong>Information Governance is the setting of Objectives to achieve measurable Outcomes by People using information Assets in a life cycle Process that considers the impact of both Risk and Time.</strong></em></p>
+<strong>People</strong> are our greatest asset; thanks to Graham Sadd of <a href="bit.ly/awyWaF" target="_blank">PAOGA</a> for promoting this phrase.  It highlights a weakness in the definition above.  In the public service context, consideration has to be given to both the receivers and providers of service.  Service receivers are rightly sensitive to, and legally protected for, the sharing of personal data; they have rights.   Service providers have roles and responsibilities with respect to processing data about their clients.  Organisations have a duty to administer information <strong><a title="IG Assets: Value and protect" href="http://lenand.wordpress.com/2011/02/23/ig-assets-value-and-protect/" target="_blank">Assets</a></strong> securely and use them for improving <strong><a href="http://wp.me/p14MGf-hV" target="_blank">Outcomes</a></strong>.
+
+<strong>People</strong> are a primary dimension in the <a href="http://wp.me/p14MGf-dD" target="_blank">7DIG Framework</a>.  Seven candidate secondary dimensions are:
+<ul>
+	<li><strong>Identity</strong>:  defines a person uniquely.  It is essential in every personalised service for both the giver and receiver.  <a href="http://wp.me/p14MGf-7u" target="_blank">Identity Management</a> is a huge topic and beneficially considered as separate subject, however it is inextricably linked with Information Governance.  Correct identity is used to establish rights, roles and responsibilities.  Correct identity is necessary for information sharing between organisations.</li>
+	<li><strong>Rights</strong>:  Whether enshrined in statute or common law, individual citizens have rights of many kinds.  Information collected from and held about citizens is entrusted to public authorities for safe-keeping.  Entitlements, such as housing benefits, are personally sensitive and there is a right of privacy.</li>
+	<li><strong>Responsibilities</strong>:  Service delivery staff are charged with administrative duties and may be obliged to follow strict information sharing protocols.</li>
+	<li><strong>Organisation</strong>:  Government agencies and local authorities, not named staff, are usually nominated as the guardians of information.  The management structure and hierarchy needs to identify a senior responsible officer who is accountable for Information Governance.</li>
+	<li><strong>Roles</strong>:  <strong>People</strong> may have several different roles at the same time, depending on the context.  A police officer would just be regarded as a parent in a school system.  The Information Governance <strong><a href="http://wp.me/p14MGf-jU" target="_blank">Processes</a></strong> should be capable of verifying that access to information <strong><a title="IG Assets: Value and protect" href="http://lenand.wordpress.com/2011/02/23/ig-assets-value-and-protect/" target="_blank">Assets</a></strong> is only given to appropriate roles.</li>
+	<li><strong>Culture</strong>:  Historically, Information Governance has concentrated on Impact Level Assessment and data protection.  Information sharing between agencies is not fully trusted and a <strong>Risk</strong>-averse culture has a default option not to share.  With increasing <a href="http://wp.me/p14MGf-h9" target="_blank">political demand for many more multi-agency services</a>, reversing this culture may yet take many years.  The new mantra of shared services needs shared information in a trusted environment.</li>
+	<li><strong>Education</strong>: Information Governance in the widest sense is not high on political or social agenda.  There are pockets of good practice in identity management and data protection but not a high skill base for information analysis and maximising the value of data.</li>
+</ul>
+To quote a couple of excellent research reports from the Audit Commission, "<a href="http://lenand.wordpress.com/wp-content/uploads/2011/02/itsisk.pdf" target="_blank">Is there something I should know?</a>" showed how poor quality of data and analysis processes in public sector organisations can badly impact decision making:
+<ul>
+	<li><em>"Members say they receive lengthy reports but still do not have the relevant information they need. Senior officers are frustrated that powerful data are unexploited. </em></li>
+	<li><em>Less than 5 per cent of councils have excellent data quality and many acknowledge that their data quality problems are fundamental in nature. </em></li>
+	<li><em>Almost 80 per cent of councils say a lack of in-depth analysis is a major problem."</em></li>
+</ul>
+"<a href="http://lenand.wordpress.com/wp-content/uploads/2011/02/truth.pdf" target="_blank">Nothing but the Truth</a>" was critical of the skills of People, for example:
+<p style="text-align:left;padding-left:30px;">"<em>The special Joint Area Review of the London Borough of Haringey in November 2008 found that ‘the standard of record keeping on case files across all agencies is inconsistent and often poor... Police and health service files are often poorly organised and individual cases are difficult to follow. Health services files include hand-written notes which are sometimes illegible and do not identify the author. The standard of record- keeping in the health records of looked-after children and young people is poor and some entries are inaccurate’ (Ref. 13). Work by the Commission for Social Care Inspection into the quality of care practice with people experiencing abuse found something similar.</em>"</p>
+Some <strong>People</strong> may be very pleased that such <a href="http://wp.me/p14MGf-3T" target="_blank">independent scrutiny is disappearing</a> from the local government sector.  Good quality information is critical to the success of both bottom-up and top-down methods of governance.  Big Society needs even better access to information stores.
+
+Different parts of the total Information Governance environment require different skills and different <strong>People</strong>.  Hence it must be a team effort, bringing together service practitioners, managers, lawyers, administrators, computing staff, information analysts and security experts – to say nothing of the input from citizens who are data subjects.  Furthermore there is the Information Governance surrounding intelligence, intellectual property and classified data; there are specialists in all these fields.
+
+Quarkside hopes that a simple framework like <strong>7DIG</strong> can expose some basic princples that will help understanding of a complex subject area.  Information <strong><a title="IG Assets: Value and protect" href="http://lenand.wordpress.com/2011/02/23/ig-assets-value-and-protect/" target="_blank">Assets</a></strong> will be the next to be published.
+
+<a href="http://lenand.wordpress.com/wp-content/uploads/2011/02/7digdom1a.jpg"><img class="size-full wp-image-1130" title="7DIG Domains" src="http://lenand.wordpress.com/wp-content/uploads/2011/02/7digdom1a.jpg" alt="7DIG Domains" width="640" height="480" /></a>
+<div class="mceTemp mceIEcenter"><dl class="wp-caption aligncenter"> <dd class="wp-caption-dd">7DIG Domains</dd> </dl></div>
