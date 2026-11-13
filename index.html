@@ -10,6 +10,11 @@ layout: default
       <div class="meta">{{ post.date | date: "%-d %B %Y" }}{% if post.categories %} &middot; {{ post.categories | join: ', ' }}{% endif %}</div>
       {% assign excerpt = post.excerpt | strip_html | truncatewords: 28 %}
       <p>{{ excerpt }}</p>
+      <details class="expand">
+        <summary title="Show full post">&bull;&bull;&bull;</summary>
+        <div class="fullpost">{{ post.content }}</div>
+      </details>
+      <a class="more" href="{{ post.url | relative_url }}">Read post &rarr;</a>
     </div>
   </article>
   {% endfor %}

@@ -55,6 +55,28 @@ section.list { padding: 36px 0 8px; }
 .post .meta { font-family: var(--mono); font-size: 12.5px; color: var(--ink-soft); letter-spacing: 0.04em; }
 .post p { margin: 8px 0 0; color: var(--ink-soft); }
 a.more { font-family: var(--mono); font-size: 13px; text-decoration: none; color: var(--accent); }
+details.expand { margin-top: 2px; }
+details.expand summary {
+  display: inline-block;
+  font-family: var(--mono);
+  font-size: 16px;
+  letter-spacing: 2px;
+  color: var(--accent);
+  cursor: pointer;
+  list-style: none;
+  user-select: none;
+  padding: 2px 4px;
+}
+details.expand summary::-webkit-details-marker { display: none; }
+details.expand summary:hover { background: #eef2f5; }
+details.expand[open] summary { color: var(--ink-soft); }
+details.expand .fullpost {
+  border-left: 3px solid var(--line);
+  padding: 4px 0 4px 16px;
+  margin: 8px 0 0;
+}
+details.expand .fullpost img { max-width: 100%; height: auto; }
+details.expand .fullpost pre { white-space: pre-wrap; font-family: var(--mono); font-size: 13px; }
 article.full { padding: 36px 0 8px; }
 article.full h1.title { margin: 0 0 8px; font-size: 28px; line-height: 1.25; font-weight: 600; }
 article.full .meta { font-family: var(--mono); font-size: 12.5px; color: var(--ink-soft); letter-spacing: 0.04em; margin-bottom: 28px; }
