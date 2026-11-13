@@ -85,8 +85,9 @@ article.full pre { background: #fff; border: 1px solid var(--line); padding: 14p
 article.full code { font-family: var(--mono); font-size: 0.9em; background: #fff; border: 1px solid var(--line); padding: 0 4px; }
 article.full pre code { border: 0; padding: 0; background: none; }
 article.full blockquote { border-left: 3px solid var(--line); margin: 1em 0; padding: 0.1em 0 0.1em 16px; color: var(--ink-soft); }
-.pager { display: flex; justify-content: space-between; font-family: var(--mono); font-size: 13px; padding: 20px 0; }
+.pager { display: flex; justify-content: space-between; align-items: baseline; font-family: var(--mono); font-size: 13px; padding: 20px 0; }
 .pager a { text-decoration: none; }
+.pager .pagemeta { color: var(--ink-soft); }
 .tagindex ul { list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 8px; }
 .tagindex li a { font-family: var(--mono); font-size: 13px; text-decoration: none; border: 1px solid var(--line); background: #fff; padding: 4px 10px; display: inline-block; }
 .tagindex li a:hover { border-color: var(--accent); }
