@@ -1,9 +1,9 @@
 :root {
-  --ink: #101418;
-  --ink-soft: #4a545e;
+  --ink: #000000;
+  --ink-soft: #2b2f36;
   --line: #d8dee3;
   --paper: #fbfcfd;
-  --accent: #0b5c8f;
+  --accent: #c00000;
   --mono: "Source Code Pro", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
 }
 * { box-sizing: border-box; }
@@ -12,8 +12,8 @@ body {
   background: var(--paper);
   color: var(--ink);
   font-family: "Source Sans 3", "Source Sans Pro", -apple-system, "Segoe UI", sans-serif;
-  font-size: 17px;
-  line-height: 1.65;
+  font-size: 18px;
+  line-height: 1.4;
   -webkit-font-smoothing: antialiased;
 }
 .wrap { max-width: 720px; margin: 0 auto; padding: 0 24px; }
