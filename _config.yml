@@ -1,0 +1,14 @@
+title: Quarkside
+description: Quarks are elementary particles. Ideas for composing social benefits.
+url: "https://pferdy.github.io"
+baseurl: "/quarkside"
+permalink: /:year/:month/:day/:title/
+markdown: kramdown
+highlighter: rouge
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+paginate: 10
+paginate_path: "/page:num/"
+exclude:
+  - README.md
