@@ -17,6 +17,9 @@
         <img class="avatar" src="https://avatars.githubusercontent.com/u/86346103?v=4" alt="QuarkSaur, the Quarkside logo" width="56" height="56">
         <a class="logo" href="{{ '/' | relative_url }}"><span class="q">Q</span>UARKSIDE</a>
       </div>
+      <form class="searchbox" action="{{ '/search/' | relative_url }}" method="get">
+        <input type="search" name="q" placeholder="Search posts&hellip;" aria-label="Search posts" autocomplete="off">
+      </form>
       <nav class="site">
         <a href="{{ '/' | relative_url }}">Posts</a>
         <a href="{{ '/about/' | relative_url }}">About</a>

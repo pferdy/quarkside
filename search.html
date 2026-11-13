@@ -1,0 +1,82 @@
+---
+title: "Search"
+permalink: /search/
+layout: default
+---
+<section class="list">
+  <div class="resultcount" id="count"></div>
+  <div id="results"></div>
+</section>
+<script>
+(function () {
+  var INDEX_URL = "{{ '/search.json' | relative_url }}";
+  var q = "";
+  try { q = new URLSearchParams(window.location.search).get("q") || ""; } catch (e) {}
+  q = q.trim();
+  var countEl = document.getElementById("count");
+  var out = document.getElementById("results");
+  var esc = function (s) {
+    return s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+  };
+  var rx = function (s) {
+    return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  };
+  function render(message, items) {
+    countEl.textContent = message;
+    var html = "";
+    for (var i = 0; i < items.length; i++) {
+      var it = items[i];
+      var num = (i + 1 < 10 ? "0" : "") + (i + 1);
+      html += '<article class="result"><div class="num">' + num + '</div><div>'
+           + '<h2><a href="' + esc(it.url) + '">' + esc(it.title) + "</a></h2>"
+           + '<div class="meta">' + esc(it.date) + "</div>"
+           + '<p class="snippet">' + it.snippet + "</p>"
+           + "</div></article>";
+    }
+    out.innerHTML = html;
+  }
+  if (!q) {
+    render("Type a search term in the box at the top of the page.", []);
+    return;
+  }
+  fetch(INDEX_URL).then(function (r) {
+    if (!r.ok) throw new Error("index fetch failed");
+    return r.json();
+  }).then(function (data) {
+    var terms = q.toLowerCase().split(/\s+/).filter(Boolean);
+    var hits = [];
+    for (var i = 0; i < data.length; i++) {
+      var d = data[i];
+      var tl = d.title.toLowerCase();
+      var cl = d.content.toLowerCase();
+      var score = 0, first = -1, ok = true;
+      for (var j = 0; j < terms.length; j++) {
+        var t = terms[j];
+        var inTitle = tl.split(t).length - 1;
+        var inContent = cl.split(t).length - 1;
+        if (inTitle + inContent === 0) { ok = false; break; }
+        score += inTitle * 10 + inContent;
+        var pos = cl.indexOf(t);
+        if (first < 0 || (pos >= 0 && pos < first)) first = pos;
+      }
+      if (!ok) continue;
+      var start = Math.max(0, first - 90);
+      var raw = d.content.substr(start, 260);
+      var snippet = (start > 0 ? "&hellip;" : "") + esc(raw) + "&hellip;";
+      for (var k = 0; k < terms.length; k++) {
+        var re = new RegExp("(" + rx(esc(terms[k])) + ")", "gi");
+        snippet = snippet.replace(re, "<mark>$1</mark>");
+      }
+      hits.push({ title: d.title, url: d.url, date: d.date, snippet: snippet, score: score });
+    }
+    hits.sort(function (a, b) { return b.score - a.score; });
+    var n = hits.length > 25 ? 25 : hits.length;
+    render(hits.length === 0
+      ? "No posts found containing “" + q + "”."
+      : hits.length + (hits.length === 1 ? " post" : " posts") + " found for “" + q + "”. Showing the top " + n + ".",
+      hits.slice(0, n));
+  }).catch(function () {
+    render("The search index could not be loaded. Please try again.", []);
+  });
+})();
+</script>
