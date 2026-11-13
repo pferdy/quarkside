@@ -1,6 +1,6 @@
 # quarkside
 
-Quarks are elementary particles. Ideas for composing social benefits. QUARKSIDEas
+One quark is small, three make a proton. These ideas need takers.
 
 Static blog built with Jekyll, hosted free on GitHub Pages.
 
@@ -8,7 +8,7 @@ Static blog built with Jekyll, hosted free on GitHub Pages.
 
 - `_posts/` — 245 posts imported from lenand.wordpress.com (2010–2015), dates, categories, and tags preserved
 - `_layouts/` — page templates (default, post, page)
-- `index.html` — home page, all posts listed newest first
+- `index.html` — home page, paginated 10 posts at a time with newer/older links
 - `tags.html` — tag index at /tags/
 - `about.md` — the About page
 - `assets/css/main.css` — styling
@@ -16,7 +16,7 @@ Static blog built with Jekyll, hosted free on GitHub Pages.
 
 ## Enable the site
 
-1. Push all files to the main branch of this repository (replace the README or keep it, the `exclude` setting stops Jekyll rendering it).
+1. Push all files to the main branch of this repository.
 2. Repository Settings → Pages → Source: Deploy from a branch → Branch: main, folder / (root).
 3. The site goes live at https://pferdy.github.io/quarkside/
 
@@ -26,7 +26,7 @@ Add a `CNAME` file containing `quarkside.co.uk`, then set a CNAME record for qua
 
 ## Images
 
-Posts reference images still hosted at lenand.wordpress.com. If that WordPress site is ever deleted, download its media library (Tools → Export includes the media URL list) and store copies under `assets/images/`, then update the image paths in the posts.
+Post images are currently referenced from lenand.wordpress.com. A full media archive exists; to self-host, upload it under `assets/images/` and update image paths in the posts.
 
 ## Writing a new post
 
