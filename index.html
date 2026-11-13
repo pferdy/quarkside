@@ -1,0 +1,16 @@
+---
+layout: default
+---
+<section class="list">
+  {% for post in site.posts %}
+  <article class="post">
+    <div class="num">{% assign n = forloop.index %}{% if n < 10 %}0{% endif %}{{ n }}</div>
+    <div>
+      <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+      <div class="meta">{{ post.date | date: "%-d %B %Y" }}{% if post.categories %} &middot; {{ post.categories | join: ', ' }}{% endif %}</div>
+      {% assign excerpt = post.excerpt | strip_html | truncatewords: 28 %}
+      <p>{{ excerpt }}</p>
+    </div>
+  </article>
+  {% endfor %}
+</section>
