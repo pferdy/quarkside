@@ -1,0 +1,23 @@
+---
+title: "SIF Strikes back"
+date: 2010-11-10 00:17:44
+categories: [Education, Process, Standards]
+tags: [Big Society, DfE, SIF, SWGfL]
+layout: post
+---
+
+Schools in the UK process the information about 9 million children on a daily basis.  The total volume is hardly noticed as it is performed in about 27,000 independent, self-contained locations.  This is not just by the 400,000 teachers, but also by up to 90,000 administration staff and assistants.  A school is typically involved in the operation of 10 different systems with records of attendance, achievements, school meals, libraries, parental addresses etc.  Grossing up, there are about operational 250,000 systems.    Much of the data is shared, within a school, across schools, up to local authorities and to the Department for Education (DfE).  They share childrens’ names, addresses, dates of birth, nationality, parents’ names, qualifications etc.
+
+Some data is a statutory requirement, such as registration of attendance, twice per school day.  Some is necessary for the operation of timetables and recording of progress.  Some is valuable for the transfer of children between schools, peaking at the beginning of a school year.  Why is SIF potentially so important?:
+<ul>
+	<li>There is a hidden administrative burden entering, correcting and transmitting school records. Often there is no automatic transfer of records, requiring manual re-entry of data – complete with transcription errors.  Incoming electronic records may be invalid.  It is said that 90% of the administration work is caused by 10% of the records ie those which are incorrect.   All this is a high cost to the UK economy.  SIF can reduce it.</li>
+	<li>Access to computer facilities by children and staff is now ubiquitous.  Security is required to protect computer accounts from inappropriate access, malicious behaviour and bullying.  Identity Management in schools and from home locations is essential.  Usernames and passwords should be common across all systems used by teachers or students.  Technology that is commonly used in Universities is slowly spreading to schools.  Allowing one sign on for accounts in many systems needs secure and reliable data sources. SIF can synchronise them.</li>
+	<li>Data collected for operational use within schools can be shared horizontally in local consortia.  Data can be aggregated and analysed both for school use and for vertical reporting to local authorities, the DfE or other agencies.  SIF is built to speed up such processes at certified levels of accuracy.</li>
+</ul>
+The power of the DfE is immense, but the independence of schools is sacrosanct.  Legislation is needed to enforce any Departmental edict. Schools need to operate their data processing independently, without undue hindrance from external authorities.  The solution lies in Standards. The need for interoperability enforces standards; look at electric power, mobile phones, computer networks and rail tracks.  Educational software is no exception.  Standards have been developed for educational resources and administration for all levels of education.
+
+Becta commissioned a study into the standards for administration systems and recommended the adoption of the US originated Systems Interoperability Framework (SIF). It has been modified for use in the UK.   The <a href="http://www.sifinfo.org/uk/">SIF Association (UK)</a> is the meeting place for educational software suppliers, schools and representative bodies (such as Regional Broadband Consortia).  Standards have been agreed and software developed that securely and accurately transfers data between any compliant systems.  A certification process is in place.  Local computer hubs orchestrate the data from all communicating systems; validating it against the Standard and ensuring that it is correct for receiving systems.
+
+One good example is the South West Grid for Learning, which has started integrating multiple applications for over 2,500 establishments.  They can provide a simplified sign-on service, personal online learning space, collaboration tools and interoperability of many services.  Quality is assured for all records that comply with the Standard.  Inevitably, such levels of integration highlight the poor quality of previous data.  Slowly, but surely, the data can be cleansed and improve the efficiency and interoperability of school services.
+
+SIF is a superb example of bottom-up collaboration, not enforced top-down.  SIF has more work to do than <a href="http://wp.me/p14MGf-6h">refute ill-informed</a> opinions. SIF delivers benefits at a massive local level; it could be applied in 27,000 data centres.  SIF is Big Society.
