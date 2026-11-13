@@ -1,6 +1,6 @@
 # quarkside
 
-One quark is small, three make a proton. These ideas need takers.
+Quarks are elementary particles. Ideas for composing social benefits. QUARKSIDEas
 
 Static blog built with Jekyll, hosted free on GitHub Pages.
 
