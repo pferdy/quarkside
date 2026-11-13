@@ -1,5 +1,5 @@
 ---
-title: "Who should trust "Trusted Computing"?"
+title: 'Who should trust "Trusted Computing"?'
 date: 2013-01-07 11:45:13
 categories: [Governance, Policy, Technology]
 tags: [DRM, interoperability, Open Internet, Open Source, Open Standards, Trusted Computing]

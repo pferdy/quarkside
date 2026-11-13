@@ -1,5 +1,5 @@
 ---
-title: '"Better for Less" - could do better"
+title: '"Better for Less" - could do better'
 date: 2010-09-27 09:16:57
 categories: [Governance, Local Government, Policy]
 layout: post
