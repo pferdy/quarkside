@@ -2,7 +2,11 @@
 layout: default
 ---
 <section class="list">
-  {% for post in paginator.posts %}
+  {% assign newposts = site.posts | where_exp: "p", "p.date.year >= 2026" %}
+  {% if newposts.size == 0 %}
+  <div class="resultcount">No new posts yet. The 245 posts from 2010 to 2015 live in the <a href="{{ '/archive/' | relative_url }}">archive</a>. New writing will appear here first.</div>
+  {% endif %}
+  {% for post in newposts %}
   <article class="post">
     <div class="num">{% assign n = forloop.index %}{% if n < 10 %}0{% endif %}{{ n }}</div>
     <div>
@@ -19,16 +23,3 @@ layout: default
   </article>
   {% endfor %}
 </section>
-<div class="pager">
-  {% if paginator.previous_page %}
-    <a class="more" href="{{ paginator.previous_page_path | relative_url }}">&larr; Newer posts</a>
-  {% else %}
-    <span></span>
-  {% endif %}
-  <span class="pagemeta">Page {{ paginator.page }} of {{ paginator.total_pages }}</span>
-  {% if paginator.next_page %}
-    <a class="more" href="{{ paginator.next_page_path | relative_url }}">Older posts &darr;</a>
-  {% else %}
-    <span></span>
-  {% endif %}
-</div>

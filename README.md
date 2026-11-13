@@ -7,9 +7,10 @@ Static blog built with Jekyll, hosted free on GitHub Pages.
 ## Structure
 
 - `_posts/` — 245 posts imported from lenand.wordpress.com (2010–2015), dates, categories, and tags preserved
+- `index.html` — home page, the New section: posts from 2026 onwards
+- `archive.html` — the archive: compact index of the imported posts grouped by year
+- `search.html` and `search.json` — client-side search over every post
 - `_layouts/` — page templates (default, post, page)
-- `index.html` — home page, paginated 10 posts at a time with newer/older links
-- `tags.html` — tag index at /tags/
 - `about.md` — the About page
 - `assets/css/main.css` — styling
 - `_config.yml` — site configuration, including `baseurl: /quarkside`
@@ -22,7 +23,7 @@ Static blog built with Jekyll, hosted free on GitHub Pages.
 
 ## Custom domain
 
-Add a `CNAME` file containing `quarkside.co.uk`, then set a CNAME record for quarkside.co.uk pointing at pferdy.github.io at the domain registrar, and set the custom domain in the repository Pages settings. Remove `baseurl: /quarkside` from `_config.yml` once the domain is attached.
+Add a `CNAME` file containing `quarkside.co.uk`, then set DNS at the registrar (34SP.com) and set the custom domain in the repository Pages settings. Remove `baseurl: /quarkside` from `_config.yml` once the domain is attached.
 
 ## Images
 
@@ -40,3 +41,5 @@ Create a file in `_posts/` named `YYYY-MM-DD-your-title.md` with this header:
     ---
 
     Your text here.
+
+New posts dated 2026 or later appear on the home page; older posts belong to the archive.
