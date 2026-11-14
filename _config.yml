@@ -10,3 +10,11 @@ plugins:
   - jekyll-sitemap
 exclude:
   - README.md
+
+# Comments (giscus, backed by GitHub Discussions)
+# Filled in once Discussions and the giscus app are enabled on the repo.
+giscus:
+  repo: "pferdy/quarkside"
+  repo_id: ""
+  category: "Announcements"
+  category_id: ""

@@ -10,3 +10,10 @@ layout: default
   {% if page.previous.url %}<a href="{{ page.previous.url | relative_url }}">&larr; {{ page.previous.title | truncatewords: 6 }}</a>{% endif %}
   {% if page.next.url %}<a href="{{ page.next.url | relative_url }}">{{ page.next.title | truncatewords: 6 }} &rarr;</a>{% endif %}
 </div>
+{% if site.giscus.repo_id %}
+<section class="comments">
+  <h2 class="comments-title">Comments</h2>
+  <p class="comments-note">Comments are stored in GitHub Discussions on the <a href="https://github.com/{{ site.giscus.repo }}/discussions">Quarkside repository</a>. You need a GitHub account to post.</p>
+  {% include giscus.html %}
+</section>
+{% endif %}
