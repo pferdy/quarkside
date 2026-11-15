@@ -12,9 +12,8 @@ exclude:
   - README.md
 
 # Comments (giscus, backed by GitHub Discussions)
-# Filled in once Discussions and the giscus app are enabled on the repo.
 giscus:
   repo: "pferdy/quarkside"
-  repo_id: ""
+  repo_id: "R_kgDOVn8ydg"
   category: "Announcements"
-  category_id: ""
+  category_id: "DIC_kwDOVn8yds4DLL-D"
