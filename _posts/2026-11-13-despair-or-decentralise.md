@@ -27,3 +27,9 @@ Alternative: Decentralised
 * Federate with many trusted partners
 
 It only needs the telecoms network to be resilient and keep the Internet running.
+
+## Response from a dealing room veteran
+
+A reader with real dealing room experience responded with the diagram below, which I agree with. Market data from a single provider is distributed through a dealing room network to hundreds of dealer workstations, video and telephone services, with peer-to-peer communication throughout. The design principles are stated plainly: decentralised, distributed management; fast reliable multicast; asynchronous start-up and closedown; and no single point of failure. Where a system genuinely matters, a single point of failure is treated as a design defect, not an accepted risk. Centralised cloud services should be held to the same standard.
+
+![Dealing room distribution network: decentralised, distributed management, no single point of failure]({{ '/assets/Dealing.png' | relative_url }})
