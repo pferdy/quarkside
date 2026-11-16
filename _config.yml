@@ -1,7 +1,6 @@
 title: Quarkside
 description: Quarks combine to make matter; ideas combine to make systems.
-url: "https://pferdy.github.io"
-baseurl: "/quarkside"
+url: "https://quarkside.co.uk"
 permalink: /:year/:month/:day/:title/
 markdown: kramdown
 highlighter: rouge
