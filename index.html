@@ -14,7 +14,8 @@ layout: default
     {% assign yy = post.date | date: "%Y" %}
     {% if yy >= "2026" %}
   <article class="post">
-    <div class="num">{% if n < 10 %}0{% endif %}{{ n }}</div>
+    {% assign pn = n | minus: forloop.index0 %}
+    <div class="num">{% if pn < 10 %}0{% endif %}{{ pn }}</div>
     <div>
       <div class="posthead">
         <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
