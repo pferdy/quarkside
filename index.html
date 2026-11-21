@@ -23,10 +23,9 @@ layout: default
       </div>
             {{ post.content | truncatewords: 100 }}
       <details class="expand">
-        <summary title="Show full post">&bull;&bull;&bull;</summary>
+        <summary title="Show full post">&bull;&bull;&bull; more</summary>
         <div class="fullpost">{{ post.content }}</div>
       </details>
-      <a class="more" href="{{ post.url | relative_url }}">Read post &rarr;</a>
     </div>
   </article>
     {% endif %}
