@@ -16,8 +16,10 @@ layout: default
   <article class="post">
     <div class="num">{% if n < 10 %}0{% endif %}{{ n }}</div>
     <div>
-      <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
-      <div class="meta">{{ post.date | date: "%-d %B %Y" }}{% if post.categories %} &middot; {{ post.categories | join: ', ' }}{% endif %}</div>
+      <div class="posthead">
+        <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+        <span class="meta">{{ post.date | date: "%-d %b %Y" }}{% if post.categories %} &middot; {{ post.categories | join: ', ' }}{% endif %}</span>
+      </div>
       {% assign excerpt = post.excerpt | strip_html | truncatewords: 28 %}
       <p>{{ excerpt }}</p>
       <details class="expand">
